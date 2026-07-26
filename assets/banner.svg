@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="55%" stop-color="#132a3e"/>
+      <stop offset="100%" stop-color="#1b3a4b"/>
+    </linearGradient>
+    <linearGradient id="pyBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B8BBE"/>
+      <stop offset="100%" stop-color="#306998"/>
+    </linearGradient>
+    <linearGradient id="pyYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE873"/>
+      <stop offset="100%" stop-color="#FFD43B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4B8BBE" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4B8BBE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="capsuleFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e3d52"/>
+      <stop offset="100%" stop-color="#132a3e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <circle cx="980" cy="120" r="220" fill="url(#glow)"/>
+
+  <!-- subtle grid lines -->
+  <g stroke="#2a4a5e" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="130" x2="1200" y2="130"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="340" x2="1200" y2="340"/>
+  </g>
+
+  <!-- python-esque intertwined curves on right side -->
+  <g opacity="0.9">
+    <path d="M 760 60 C 900 30, 980 80, 960 150 C 940 220, 830 210, 820 270"
+          fill="none" stroke="url(#pyBlue)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 850 300 C 990 330, 1080 280, 1060 210 C 1040 140, 950 150, 940 90"
+          fill="none" stroke="url(#pyYellow)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="770" cy="66" r="10" fill="#0d1b2a"/>
+    <circle cx="1050" cy="296" r="10" fill="#0d1b2a"/>
+  </g>
+
+  <!-- floating "environment" capsules -->
+  <g>
+    <rect x="700" y="230" width="130" height="52" rx="14" fill="url(#capsuleFill)" stroke="#4B8BBE" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="722" cy="256" r="5" fill="#FFD43B"/>
+    <line x1="740" y1="250" x2="805" y2="250" stroke="#4B8BBE" stroke-width="3" stroke-linecap="round"/>
+    <line x1="740" y1="262" x2="790" y2="262" stroke="#3a6a8c" stroke-width="3" stroke-linecap="round"/>
+
+    <rect x="880" y="60" width="150" height="52" rx="14" fill="url(#capsuleFill)" stroke="#FFD43B" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="904" cy="86" r="5" fill="#4B8BBE"/>
+    <line x1="922" y1="80" x2="1000" y2="80" stroke="#FFD43B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="922" y1="92" x2="980" y2="92" stroke="#c9a833" stroke-width="3" stroke-linecap="round"/>
+
+    <rect x="1000" y="180" width="120" height="48" rx="12" fill="url(#capsuleFill)" stroke="#4B8BBE" stroke-width="1.5" opacity="0.85"/>
+    <circle cx="1020" cy="204" r="4.5" fill="#FFD43B"/>
+    <line x1="1036" y1="199" x2="1092" y2="199" stroke="#4B8BBE" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="1036" y1="210" x2="1078" y2="210" stroke="#3a6a8c" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- terminal prompt accent left, small -->
+  <g opacity="0.55">
+    <rect x="60" y="270" width="360" height="30" rx="6" fill="#0f2333" stroke="#2a4a5e" stroke-width="1"/>
+    <text x="76" y="291" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#7fd0ff">$ venv activate --auto</text>
+  </g>
+
+  <!-- Headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="62" font-weight="700" fill="#f4faff">
+    <tspan x="60" y="150" textLength="740" lengthAdjust="spacingAndGlyphs">Python Environment</tspan>
+    <tspan x="60" y="222" textLength="330" lengthAdjust="spacingAndGlyphs" fill="#FFD43B">Manager</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="60" y="246" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#b9d4e6">
+    <tspan x="60" y="246" textLength="700" lengthAdjust="spacingAndGlyphs">Automates Python virtual environments —</tspan>
+    <tspan x="60" y="252" dy="24" textLength="560" lengthAdjust="spacingAndGlyphs">no more manual setup, just run and go</tspan>
+  </text>
+</svg>
